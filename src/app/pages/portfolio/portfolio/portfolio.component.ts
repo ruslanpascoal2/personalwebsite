@@ -10,6 +10,7 @@ import { BehaviorSubject } from 'rxjs';
 export class PortfolioComponent implements OnInit {
 
   imagesLoaded: number = 0;
+  contentLoaded: boolean = false;
 
   constructor(private spinner: NgxSpinnerService) { }
 
@@ -21,6 +22,7 @@ export class PortfolioComponent implements OnInit {
     this.imagesLoaded++;
 
     if (this.imagesLoaded == 2) {
+      this.contentLoaded = true;
       this.spinner.hide();
       return;
     }

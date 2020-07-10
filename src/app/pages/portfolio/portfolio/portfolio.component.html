@@ -1,11 +1,14 @@
 <div class="container-fluid">
 
 
-  <div class="container">
+
+  <div class="container" [hidden]="!contentLoaded">
+
+    <!-- <h1 class="route-title">PORTFÓLIO</h1> -->
 
     <div class="project-card my-5">
 
-      <ngx-spinner bdColor="#191919" [fullScreen]="false" type="ball-clip-rotate-multiple" size="medium">
+      <ngx-spinner bdColor="#191919" [fullScreen]="false" type="ball-spin-clockwise" size="medium">
       </ngx-spinner>
 
       <div id="carousel1" class="carousel slide" data-ride="carousel">

@@ -8,6 +8,7 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class AboutComponent implements OnInit {
 
+  contentLoaded: boolean = false;
 
   constructor(private spinner: NgxSpinnerService) { }
 
@@ -16,6 +17,7 @@ export class AboutComponent implements OnInit {
   }
 
   imageLoaded() {
+    this.contentLoaded = true;
     this.spinner.hide();
   }
 

@@ -1,22 +1,17 @@
-<div class="wrapper" *ngIf="!menuExpanded; else menu">
+<div class="icon">
     <i (click)="toggleMenu()" id="menu-icon" class="fas fa-bars"></i>
 </div>
 
-<ng-template #menu>
+<div *ngIf="menuExpanded" class="menu-wrapper">
 
-    <div class="menu-wrapper">
+    <div class="links">
 
-        <i (click)="toggleMenu()" id="menu-icon" class="fas fa-bars"></i>
-
-        <div class="links">
-
-            <a (click)="toggleMenu()" routerLink="">HOME</a>
-            <a (click)="toggleMenu()" routerLink="portfolio">PORTFOLIO</a>
-            <a (click)="toggleMenu()" routerLink="about">SOBRE</a>
-            <a (click)="toggleMenu()" href="www.google.com">CONTATO</a>
-
-        </div>
+        <a (click)="toggleMenu()" routerLink="">HOME</a>
+        <a (click)="toggleMenu()" routerLink="portfolio">PORTFOLIO</a>
+        <a (click)="toggleMenu()" routerLink="about">SOBRE</a>
+        <a (click)="toggleMenu()" routerLink="about">CURRÍCULO</a>
+        <a (click)="toggleMenu()" href="www.google.com">CONTATO</a>
 
     </div>
 
-</ng-template>
+</div>

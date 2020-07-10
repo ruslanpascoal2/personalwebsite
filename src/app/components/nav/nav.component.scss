@@ -1,8 +1,9 @@
 @import "../../../../dist/portfolio-ng/assets/variables.scss";
 
-.wrapper {
+.icon {
     width: 100%;
-    height: 100%;
+    height: 50px;
+    position: absolute;
     background: $background-color-dark;
     display: flex;
     justify-content: flex-end;
@@ -27,6 +28,8 @@
     i {
         position: absolute;
         top: 0;
+        height: 10%;
+        background: blue !important;
         align-self: flex-end;
     }
 
