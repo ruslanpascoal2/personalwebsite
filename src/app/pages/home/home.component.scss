@@ -1,0 +1,181 @@
+@import "../../../assets/variables.scss";
+
+$title-font-size: 3.2rem;
+$sub-title-font-size: 1.4rem;
+
+@mixin social-media-icon-size($height, $width) {
+    width: $width;
+    height: $height;
+}
+
+* {
+    overflow: hidden;
+}
+.contact {
+}
+#wpp-logo {
+    height: 30px;
+    margin-left: 1rem;
+}
+.container-fluid {
+    display: flex;
+    width: 100%;
+}
+
+.home-img {
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+
+    img {
+        height: 400px;
+        display: none;
+    }
+}
+
+.headline {
+    width: 80%;
+    color: $primary-color;
+}
+
+.title {
+    font-weight: 900;
+    font-size: $title-font-size;
+    text-transform: uppercase;
+    margin-bottom: 0 !important;
+}
+
+.subtitle {
+    font-weight: 500;
+    font-size: $sub-title-font-size;
+    color: $secondary-color;
+}
+
+.action-btn {
+    background: transparent;
+    color: $primary-color;
+    padding: 1rem;
+    border-radius: 0;
+    border: 2px solid #fff;
+    transition: border color 0.5s;
+}
+
+.action-btn:hover {
+    border: 2px solid $secondary-color;
+    color: $secondary-color;
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .title {
+        font-size: calc($title-font-size * 0.5);
+    }
+
+    .subtitle {
+        font-size: calc($sub-title-font-size * 0.8);
+    }
+
+    .social-media {
+        img {
+            @include social-media-icon-size(25px, 25px);
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .title {
+        font-size: $title-font-size * 0.5;
+    }
+
+    .subtitle {
+        font-size: $sub-title-font-size * 0.8;
+    }
+
+    .social-media {
+        img {
+            @include social-media-icon-size(25px, 25px);
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .title {
+        font-size: $title-font-size * 0.55;
+    }
+
+    .subtitle {
+        font-size: $sub-title-font-size * 0.83;
+    }
+
+    .social-media {
+        img {
+            @include social-media-icon-size(25px, 25px);
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .title {
+        font-size: $title-font-size * 0.62 !important;
+    }
+
+    .subtitle {
+        font-size: $sub-title-font-size * 0.87 !important;
+    }
+
+    .social-media {
+        img {
+            @include social-media-icon-size(25px, 25px);
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+    .title {
+        font-size: $title-font-size * 0.5;
+    }
+
+    .subtitle {
+        font-size: $sub-title-font-size * 0.8;
+    }
+
+    .social-media {
+        img {
+            @include social-media-icon-size(25px, 25px);
+        }
+    }
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+}

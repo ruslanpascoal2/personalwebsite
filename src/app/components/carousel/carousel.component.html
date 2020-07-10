@@ -1,0 +1,21 @@
+<div class="carousel">
+
+
+    <div *ngFor="let slide of slides; let i = index" class="frames">
+
+        <div class="slide" *ngIf="i == this.currentSlide || i == this.currentSlide + 1 || i == this.currentSlide - 1">
+
+            <img [ngClass]="{'inactive': i != this.currentSlide}" [src]="slide.img" alt="">
+
+            <h1 *ngIf="i == this.currentSlide" id="carousel-title">{{slide.title}}</h1>
+            <h5 *ngIf="i == this.currentSlide" id="carousel-description">{{slide.description}}</h5>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<button (click)="onPrevious()" class="btn btn-primary">Previous</button>
+<button (click)="onNext()" class="btn btn-primary">Next</button>

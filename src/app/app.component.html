@@ -1,0 +1,7 @@
+<app-navbar *ngIf="!isMobile; else navMobile"></app-navbar>
+
+<ng-template #navMobile>
+  <app-nav id="navMobile" (menuExpandedEmiter)="onMenuExpanded($event)"></app-nav>
+</ng-template>
+
+<router-outlet *ngIf="!menuExpanded" (scroll)="onScroll($event)"></router-outlet>

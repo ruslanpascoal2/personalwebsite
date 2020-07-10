@@ -1,0 +1,31 @@
+@import '../../../assets/variables.scss';
+
+.carousel{
+    display: flex;
+    
+}
+
+.active{
+    filter: brightness();
+}
+
+.inactive {
+    filter: blur(.3rem);
+    transform: scale(.7);;
+}
+
+img{
+    
+    width: 500px;
+}
+
+.slide{
+
+    #carousel-title{
+        color: $primary-color;
+        font-size: 4rem;
+    }
+    #carousel-description{
+        color: $primary-color;
+    }
+}

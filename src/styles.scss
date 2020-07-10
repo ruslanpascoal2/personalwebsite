@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/variables.scss";
+
+* {
+    font-family: "Lato", sans-serif;
+}
+
+.container-fluid {
+    height: 100vh;
+    width: 100%;
+    background: $background-color-dark;
+    padding-right: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}

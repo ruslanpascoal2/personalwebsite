@@ -1,0 +1,51 @@
+@import "../../../../assets/variables.scss";
+
+.container {
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+strong {
+    color: #88e4e8;
+    font-weight: 500;
+}
+#myself {
+    height: 300px;
+    width: 300px;
+    border-radius: 250px;
+    margin-bottom: 2rem;
+    border: 5px solid #333;
+}
+
+.social-media {
+    img {
+        height: 30px;
+        width: 30px;
+        margin-right: 1rem;
+        filter: opacity(0.8);
+        transition: 0.5s filter;
+        cursor: pointer;
+    }
+
+    img:hover {
+        filter: brightness(120%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #myself {
+        height: 230px;
+        width: 230px;
+        border-radius: 230px;
+    }
+    .container {
+        font-size: 1rem;
+    }
+    .desc {
+        width: 80%;
+    }
+}

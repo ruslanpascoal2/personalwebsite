@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #191919;
+    span {
+        color: #fff;
+        margin-left: 1rem;
+        font-size: 1.3rem;
+    }
+}
+
+#wpp-logo {
+    height: 100px;
+}
