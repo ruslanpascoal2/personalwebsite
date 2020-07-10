@@ -31,7 +31,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AppRoutingModule,
     LayoutModule,
     BrowserAnimationsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

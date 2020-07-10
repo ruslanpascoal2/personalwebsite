@@ -23,6 +23,7 @@
 
 .thumb {
     height: 300px;
+    border-radius: 5px;
 }
 
 .title {
@@ -67,7 +68,7 @@
     }
     .project-card {
         flex-direction: column;
-        padding: 1rem;
+        padding: 2rem;
         width: 90%;
     }
     .title {

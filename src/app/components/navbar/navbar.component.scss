@@ -1,0 +1,37 @@
+@import "../../../../dist/portfolio-ng/assets/variables.scss";
+
+.wrapper {
+    background: $background-color-dark;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+a {
+    font-size: 21px;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0.8rem;
+}
+
+a:hover {
+    color: #f1f1f1;
+    border-bottom: 3px solid #636363;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    color: #f1f1f1;
+    border-bottom: 3px solid #636363;
+}
+.active:hover {
+}
+
+.right-links {
+    li:last-of-type(1) {
+        margin-right: 2rem;
+    }
+}
