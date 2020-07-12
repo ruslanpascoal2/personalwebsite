@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   title = 'portfolio';
   isMobile: boolean = false;
   menuExpanded: boolean;
+  darkTheme: boolean;
 
   constructor(public breakpointObserver: BreakpointObserver) { }
 
@@ -22,6 +23,12 @@ export class AppComponent implements OnInit {
       .subscribe((state: BreakpointState) => {
         this.isMobile = state.matches;
       });
+  }
+
+  onThemeToggle(value) {
+    this.darkTheme = !this.darkTheme;
+    console.log('darktheme: ', this.darkTheme);
+
   }
 
   onScroll(e) {

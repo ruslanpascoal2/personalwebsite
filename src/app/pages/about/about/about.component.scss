@@ -8,9 +8,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 strong {
-    color: #88e4e8;
+    color: $highlight-color;
     font-weight: 500;
 }
 #myself {
@@ -43,7 +44,7 @@ strong {
         border-radius: 230px;
     }
     .container {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .desc {
         width: 80%;

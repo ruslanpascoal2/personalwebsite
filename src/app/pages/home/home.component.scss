@@ -1,7 +1,7 @@
 @import "../../../assets/variables.scss";
 
-$title-font-size: 3.2rem;
-$sub-title-font-size: 1.4rem;
+$title-font-size: 3rem;
+$sub-title-font-size: 1.3rem;
 
 @mixin social-media-icon-size($height, $width) {
     width: $width;
@@ -11,8 +11,7 @@ $sub-title-font-size: 1.4rem;
 * {
     overflow: hidden;
 }
-.contact {
-}
+
 #wpp-logo {
     height: 30px;
     margin-left: 1rem;
@@ -52,7 +51,7 @@ $sub-title-font-size: 1.4rem;
 }
 
 .action-btn {
-    background: transparent;
+    background: $background-color-dark;
     color: $primary-color;
     padding: 1rem;
     border-radius: 0;
@@ -65,9 +64,6 @@ $sub-title-font-size: 1.4rem;
     color: $secondary-color;
 }
 
-/* ----------- iPhone 4 and 4S ----------- */
-
-/* Portrait */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
     .title {
         font-size: calc($title-font-size * 0.5);

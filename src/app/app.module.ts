@@ -13,7 +13,13 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './components/nav/nav.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
 
+
+export function playerFactory() {
+  return player;
+}
 
 @NgModule({
   declarations: [
@@ -24,7 +30,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     ContactComponent,
     CarouselComponent,
     NavComponent,
-    NavbarComponent
+    NavbarComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -32,6 +39,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     LayoutModule,
     BrowserAnimationsModule,
     NgxSpinnerModule,
+    LottieModule.forRoot({ player: playerFactory })
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],

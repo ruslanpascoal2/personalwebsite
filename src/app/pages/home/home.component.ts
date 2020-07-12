@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
+import { gsap, Power2, Elastic, CSSRulePlugin } from 'gsap/all';
 
 @Component({
   selector: 'app-home',
@@ -7,15 +8,20 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  @Input() darkTheme;
   hireMeButtonHovered: boolean = false;
 
   constructor() {
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // this.gsapService.fadeOpening('.stagger');
+  }
 
-  toggleImg(){
+  toggleImg() {
     this.hireMeButtonHovered = !this.hireMeButtonHovered;
   }
+
+
 
 }

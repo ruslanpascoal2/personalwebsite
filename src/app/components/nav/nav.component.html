@@ -1,18 +1,21 @@
 <div class="icon">
-    <i (click)="toggleMenu()" id="menu-icon" class="fas fa-bars"></i>
+    <!-- <i (click)="toggleMenu()" id="menu-icon" class="fas fa-bars "></i> -->
+    <ng-lottie id="menu-icon-lottie" (click)="toggleMenu()" [options]="options"
+        (animationCreated)="animationCreated($event)" width="50px"></ng-lottie>
 </div>
 
-<div *ngIf="menuExpanded" class="menu-wrapper">
+<div [ngStyle]="{'display': menuExpanded ? 'flex' : 'none'}" class="menu-wrapper">
 
     <div class="links">
 
-        <a (click)="toggleMenu()" routerLink="">HOME</a>
-        <a (click)="toggleMenu()" routerLink="portfolio">PORTFOLIO</a>
-        <a (click)="toggleMenu()" routerLink="about">SOBRE</a>
-        <a (click)="toggleMenu()"
+        <a class="stagger" (click)="toggleMenu()" routerLink="">HOME</a>
+        <a class="stagger" (click)="toggleMenu()" routerLink="portfolio">PORTFÓLIO</a>
+        <a class="stagger" (click)="toggleMenu()" routerLink="about">SOBRE</a>
+        <a class="stagger" (click)="toggleMenu()"
             href="https://drive.google.com/file/d/1JsAaA1dr4tflCaTfUf4AFk8UzL_-mj_o/view?usp=sharing"
             target="_blank">CURRÍCULO</a>
         <a (click)="toggleMenu()">CONTATO</a>
+
 
     </div>
 

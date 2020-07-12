@@ -31,7 +31,14 @@ a:hover {
 }
 
 .right-links {
-    li:last-of-type(1) {
-        margin-right: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle {
+    i {
+        font-size: 25px;
+        color: #eeeeee;
+        padding-bottom: 0.5rem;
     }
 }
